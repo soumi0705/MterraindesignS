@@ -9,7 +9,12 @@ $(document).ready(function() {
     };
     $.scrollify(scrollifyOptions);
 
-
+    $("*").each( function () {
+        var $this = $(this);
+        if (parseInt($this.css("fontSize")) < 12) {
+            $this.css({ "font-size": "12px" });   
+        }
+    });
 
     setInterval(function() {
         var currentImg = $('.active');

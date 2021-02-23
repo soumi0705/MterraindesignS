@@ -15,7 +15,7 @@ body::-webkit-scrollbar {
     position: sticky;
     top: 0;
     background-color: #d9d2bf;
-    height: 86px;
+    height: 9.6vh;
     width: 100%;
     z-index: 100;
 }
@@ -98,14 +98,26 @@ body::-webkit-scrollbar {
     }
 }
 
+.panel{
+    height:100vh;
+}
+
 .container {
-    width: 1366px;
+    width: 100vw;
     margin: 0px auto;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.slider.outer {
+    width: 100vw;
+    position: absolute;
+    top: calc(9vh + 1vh);
 }
 
 .slider-inner {
-    width: 1366px;
+    width: inherit;
     height: 600px;
     position: absolute;
     overflow: hidden;
@@ -115,7 +127,7 @@ body::-webkit-scrollbar {
 
 .slider-inner img {
     display: none;
-    width: 1366px;
+    width: inherit;
     height: 600px;
     z-index: 0;
 }
@@ -138,10 +150,11 @@ body::-webkit-scrollbar {
 }
 
 .next {
-    position: relative;
+    position: absolute;
     z-index: 20;
-    margin-left: 1160px
+    right: 0;
 }
+
 
 .bg {
     width: 100vw;
@@ -153,7 +166,6 @@ body::-webkit-scrollbar {
     width: 180px;
     text-align: center;
     padding: 11px 7px;
-    left: 586px;
     background-color: #544b29;
     border-radius: 18px;
     font-family: Century Gothic;
@@ -185,7 +197,6 @@ body::-webkit-scrollbar {
 #phil-content{
     position: absolute;
     top: 331.4vh;
-    display: block;
 }
 
 
