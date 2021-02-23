@@ -1,0 +1,127 @@
+.proj_head{
+    width: 100%;
+    height: 60px;
+    background-image: url(../project/title/title_back.png);/*Delete for Option 2*/
+    top: 86px;
+    position: absolute;
+}
+
+
+.proj_title{
+    font-size: 39px;
+    font-family: 'Josefin Sans';
+    color: #fff8f5;
+    font-stretch: extra-expanded;
+    padding: 14px 49px;
+}
+
+.proj{
+    position: absolute;
+    display: block;
+    height: 78vh;
+    /*background-image: url("../project/township_back.png");*/
+    width: 100%;
+    background-size: cover;
+    top: 21.35vh;
+}
+
+#townbg{
+    background-image: url("../project/township_back.png");;
+}
+#housebg{
+    background-image: url("../project/housing/back1.png");;
+}
+
+/*Option 2*/
+/*.proj{
+    position: absolute;
+    display: block;
+    height: 78vh;
+    width: 100%;
+    background-size: cover;
+    top: 21.35vh;
+}*/
+
+
+.township{
+    height: inherit;
+    width: inherit;
+}
+
+.slider-cover {
+    position: relative;
+    margin: 12vh 0vh 0vh 0vh;
+    display: flex;
+    justify-content: center;
+    height: 52vh;
+}
+.town {
+    width: 30vw;
+    display: inline-block;
+    height: inherit;
+    border: solid 4px white;
+    /*border: solid 4px #000000;*/ /*Option 2*/
+    border-radius: 9px;
+    padding: 0px 0px;
+    overflow: hidden;
+}
+.townsp {
+    position: relative;
+    width: 2vw;
+    display: inline-block;
+}
+
+.ptrs {
+    margin: 19vh 2vw;
+}
+
+img.townpic {
+    height: inherit;
+    /* display: flex; */
+    /* justify-content: center; */
+    margin: 0 -1vw;
+    transition: 0.5s ease;
+}
+
+.town:hover .overlay {
+    opacity: 1;
+}
+
+.town:hover img.townpic{
+    height: calc(100% + 7vh);
+}
+
+.overlay {
+    /* display: none; */
+    z-index: 10;
+    height: calc(100% - 2vh);
+    width: calc(100% - 71vw);
+    position: absolute;
+    top: 0.5vh;
+    border-radius: 4px;
+    background-color: #00000078;
+    opacity: 0;
+    transition: .5s ease;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    padding: 1vh;
+    text-shadow: 0.5px 0.5px 2px #f5f5f5;
+}
+
+
+h4.ovlname {
+    text-align: left;
+    font-weight: 400;
+    font-size: 1em;
+    margin-left: 0.5vw;
+    margin-block-start: 2vh;
+}
+
+h4.ovlarea {
+    text-align: left;
+    font-weight: 400;
+    font-size: 0.8em;
+    margin-left: 0.5vw;
+    margin-block-start: 32vh;
+}
+
