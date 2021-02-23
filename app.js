@@ -29,4 +29,4 @@ app.use(houseRoute);
 // app.use(aboutRoute);
 // app.use(eventRoute);
 // app.use(projectRoute);
-app.listen(port, () => console.log(`App listening at http://localhost:${port}`))
+app.listen(process.env.PORT || port, () => console.log(`App listening at http://localhost:${port}`))
