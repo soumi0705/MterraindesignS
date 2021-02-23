@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="shortcut icon" type="image/png" href="./logo/favicon.png">
+    <title>
+        M. Terrain DesignS
+    </title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/projstyle.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Roboto:wght@500&display=swap" rel="stylesheet">  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.19/jquery.scrollify.js"></script>
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <%- include('./partials/header.ejs') %>
+<div class = "proj_head">
+    <div class = "proj_title">HOUSING</div>
+</div>
+<section class="proj" id="housebg">
+    <div class = "township">
+        <div class = "slider-cover">
+           <%var  i = 0%>
+           <%var size = house.length %>
+            <!-- <div class = "townsp"></div> -->
+            <!-- <div id="lftptr" class = "ptrs">
+                <img src="../project/lptr.png" alt="LPtr">
+            </div> -->
+            
+            <%for(; i< size; i++){ %>
+            <div id="pjt<%=i%>" class = "town">
+                <img class = "townpic" src='<%=house[i].photo%>' alt="Omaxe Hills">
+                <div class = "overlay" id = "ovl2">
+                    <h4 class = "ovlname"><%=house[i].name%></h4>
+                    <h4 class = "ovlarea"><%=house[i].loc%></h4>
+                    <h4 class = "ovlarea"><%=house[i].area%></h4>
+
+                </div>
+            </div>
+            <%if(i>size-1){continue;}%> 
+            <div class = "townsp"></div>
+            <% } %>
+            <!-- 
+            <div id="pjt2" class = "town">
+                <img class = "townpic" src="../project/townships/park.png" alt="Omaxe Hills">
+                <div class = "overlay" id = "ovl2">
+                    
+                </div>
+            </div>
+            
+            <div class = "townsp"></div>
+            <div id="pjt3" class = "town">
+                <img class = "townpic" src="../project/townships/omaxe-hills.png" alt="Omaxe Hills">
+                <div class = "overlay" id = "ovl2">
+                    
+                </div>
+            </div> -->
+            <!-- <div id="rgtptr" class="ptrs">
+                <img src="../project/rptr.png" alt="RPtr">
+            </div> -->
+            <!-- <div class = "townsp"></div> -->
+        </div>
+    </div>
+</section>
+</body>
+</html>

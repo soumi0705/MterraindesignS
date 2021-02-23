@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="shortcut icon" type="image/png" href="./logo/favicon.png">
+    <title>
+        M. Terrain DesignS
+    </title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.19/jquery.scrollify.js"></script>
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+   <!-- <header id="titlebar" style="top: 0; position : fixed;">
+        <div id="headbar">
+            <img id="title" src="./titlebar/title.png">
+            <img id="title_r" src="./titlebar/title_r.png">
+        </div>
+        <div id="navbar">
+            <div class="navbar-buttons">
+                <a href="/#about-us">
+                    <img class="navbuttons" src="./nav/abtus button.png">
+                </a>
+                <img id="projectbtn" class="navbuttons" src="./nav/project button.png">
+                <div id="pjtdrpdwn" class="dropdown-content">
+                    <a href="/townships">TOWNSHIP</a>
+                    <a href="#">HOUSING</a>
+                    <a href="#">COMMERCIAL</a>
+                    <a href="#">VILLAS</a>
+                    <a href="#">FARMHOUSE</a>
+                    <a href="#">CLUB</a>
+                    <a href="#">SCHOOL</a>
+                </div>
+                <img class="navbuttons" src="./nav/contact button.png">
+            </div>
+        </div>
+    </header>-->
+    <!--********************************************************************************************************************************************************************************************************* -->
+    <%- include('./partials/header.ejs') %>
+    <section class="panel" id="featured-projects" ">
+        <div style="height: 11vh; top: 0; "></div>
+        <div class="container ">
+            <div class="slider outer">
+                <img src="banner/arrow-left.png " class="prev " alt="Prev ">
+
+                <div class="slider-inner">
+
+                    <img class="active first" src="./banner/banner 1.png ">
+                    <img class="last" src="./banner/banner 2.png ">
+
+                </div>
+                <img src="banner/arrow-right.png" class="next" alt="Next">
+
+            </div>
+        </div>
+    </section>
+<!--***************************************************************************************************************************************************************************************-->
+    <section class="panel " id="about-us" style="overflow: hidden;" ">
+        <img class="bg" src="./background/AboutUsBack.png" alt="background" style="z-index: 0;">
+        <div class="container" id="abt-us-content">
+            <div class="text-title">
+                <p>ABOUT US</p>
+            </div>
+            <div class="jumbotron">
+                <p class="small">
+
+                    We (earlier known as Studio Basic Design Pvt. Ltd.) have a youthful design team and dedicated members from associated fields we have (Over a short span of 5 years) vigorously grown into a full service firm committed to improving the built environment
+                    through design excellence, creative innovation and sensitivity to environmental issues.
+                </p>
+                <p class="small">
+                    We boast of a team of motivated group of professionals. The team is led by Meetali, our Director (Landscape), who as the head of the team personally oversees the landscape design and master planning of projects. She has graduated from the School of Planning
+                    and Architecture, New Delhi with a Masters degree in Landscape Architecture (1995) and a Bachelor’s Degree in Planning (1993), Meetali is an accomplished designer with proficiency in handling projects of huge scale. Her long and enriching
+                    experience at Design Cell, a Landscape Design firm from the year 1995 to year 2005 has moulded her to into a sensitive and immaculate designer with an eye for details.
+                </p>
+                <p class="small">
+                    In the year 2006 January, she joined ANSAL API, a leading Real Estate firm, as the AGM (L.Arch.). Here, Meetali gained extensive experience in designing, detailing and coordinating the external development in large townships. She was also passionately
+                    involved in designing, detailing, coordinating the external development and the urban components like parks, roundabouts and landscape for malls and residential development.
+
+                </p>
+
+            </div>
+        </div>
+    </section>
+    <!--************************************************************************************************************************************************************************************************-->
+    <section class="panel " id="video" style="overflow: hidden;" ">
+        <div id="vid">     
+            <video width=1000px style="margin-top: 14vh;" controls loop controlsList="nodownload" poster="./video/vidthumbnail.jpg">
+                    <source src="./video/Logo Anim2.mp4 " type="video/mp4 " width="1000px ">
+                    Video tag is not supported in this browser.
+            </video>
+        </div>
+    </section>
+    <!--***********************************************************************************************************************************************************************************************-->
+    <section class="panel " id="philosophy" style="overflow: hidden;" ">
+        <img class="bg" src="./background/AboutUsBack.png" alt="background" style="z-index: 0;">
+        <div class="container" id="phil-content">
+            <div class="text-title">
+                <p>PHILOSOPHY</p>
+            </div>
+            <div class="jumbotron">
+                <p class="small">
+
+                    We believe in intrinsic nature of design  inculcating all the disciplines. 
+                    For us, Landscape Architecture is more than just design of outdoor space, 
+                    it is a complex  interplay of various elements such as urban planning, land-use planning, land utilization, transport planning ,the cultural sensibilities , the environmental responses ,the flow of interior space and the dynamic ergonomic activities. The weaving of all these elements defines our spaces. 
+
+                </p>
+                <p class="small">
+                    We boast of a team of motivated group of professionals. The team is led by Meetali, our Director (Landscape), who as the head of the team personally oversees the landscape design and master planning of projects. She has graduated from the School of Planning
+                    and Architecture, New Delhi with a Masters degree in Landscape Architecture (1995) and a Bachelor’s Degree in Planning (1993), Meetali is an accomplished designer with proficiency in handling projects of huge scale. Her long and enriching
+                    experience at Design Cell, a Landscape Design firm from the year 1995 to year 2005 has moulded her to into a sensitive and immaculate designer with an eye for details.
+                </p>
+                <p class="small">
+                    In the year 2006 January, she joined ANSAL API, a leading Real Estate firm, as the AGM (L.Arch.). Here, Meetali gained extensive experience in designing, detailing and coordinating the external development in large townships. She was also passionately
+                    involved in designing, detailing, coordinating the external development and the urban components like parks, roundabouts and landscape for malls and residential development.
+
+                </p>
+                
+
+            </div>
+        </div>
+    </section>
+    <!--***********************************************************************************************************************************************************************************************-->
+
+</body>
+
+
+
+</html>
