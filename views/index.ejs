@@ -10,9 +10,22 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.19/jquery.scrollify.js"></script>
     <script src="js/main.js"></script>
+    
 </head>
 
 <body>
+    <!-- <div id="loader">
+        <img src = "../logo/logo-preloader.gif">
+    </div>
+    <script>
+        var loader = document.getElementById("loader");
+
+        window.addEventListener("load", function(){
+            loader.style.display= "none";
+        });
+
+    </script> -->
+    <%- include('./partials/preloader.ejs') %>
    <!-- <header id="titlebar" style="top: 0; position : fixed;">
         <div id="headbar">
             <img id="title" src="./titlebar/title.png">
@@ -121,8 +134,9 @@
             </div>
         </div>
     </section>
-    <!--***********************************************************************************************************************************************************************************************-->
 
+    <!--***********************************************************************************************************************************************************************************************-->
+    
 </body>
 
 
