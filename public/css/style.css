@@ -29,19 +29,47 @@ body {
 body::-webkit-scrollbar {
     display: none;
 }
+#headbar {
+    display: flex;
+    padding: 2px;
+}
+#headbar p {
+    margin: auto 6px;
+    font-size: large;
+}
+#bold {
+    font-family: 'Stardos Stencil', cursive;
+    text-shadow: 0.3px 0.3px 0.5px black;
+}
+#norm {
+    text-shadow: 0.1px 0.1px 0.1px black;
+}
+#headbar img {
+    max-height: 45px;
+}
+.head-right {
+    display: block;
+    text-align: right;
+    position: absolute;
+    right: 0;
+}
+
+.head-right p{
+    font-size: 8px !important;
+    font-family: 'Arial', sans-serif !important;
+    font-stretch: ultra-expanded;
+    text-shadow: 0.3px 0.3px 0.1px black;
+    padding: 3px;
+}
 
 #titlebar {
     position: sticky;
     top: 0;
     background-color: #d9d2bf;
-    height: 86px;
     width: 100%;
     z-index: 100;
 }
 
-#headbar {
-    height: 50px;
-}
 
 #title {
     left: 0;
