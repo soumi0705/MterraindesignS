@@ -4,7 +4,6 @@ body {
     overflow-y: scroll;
     -ms-overflow-style: none;
     scrollbar-width: none;
-    background-image: url("../background/paperback.png");
 }
 
 #loader {
@@ -138,7 +137,7 @@ body::-webkit-scrollbar {
 }
 
 .panel {
-    height: 100vh;
+    height: 768px;
 }
 
 .font-caveat {
@@ -164,7 +163,7 @@ body::-webkit-scrollbar {
 #overlay {
     width: 100vw;
     height: 700px;
-    background-color: rgb(33 25 4 / 72%);
+    background-color: #2d2204b8;
     position: absolute;
     top: 0;
     z-index: 30;
@@ -215,6 +214,14 @@ body::-webkit-scrollbar {
     right: 0;
 }
 
+#blur-bg {
+    height: inherit;
+    background-image: url('/background/bg2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .bg {
     width: 100vw;
     height: 100vh;
@@ -258,13 +265,15 @@ body::-webkit-scrollbar {
     top: 331.4vh;
 }
 
-.small {
-    font-size: 17px;
-    text-align: center;
+.Goth {
     font-family: Century Gothic;
 }
 
 #vid {
-    width: 1000px;
-    margin: auto;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    background-size: cover;
+    overflow: hidden;
 }

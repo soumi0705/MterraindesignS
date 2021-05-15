@@ -1,20 +1,4 @@
 $(document).ready(function() {
-    // var scrollifyOptions = {
-    //     section: ".panel",
-    //     //sectionName:false,
-    //     scrollSpeed: 1100,
-    //     setHeights: true,
-    //     overflowScroll: true,
-    //     touchScroll: true,
-    // };
-    // $.scrollify(scrollifyOptions);
-
-    // $("*").each( function () {
-    //     var $this = $(this);
-    //     if (parseInt($this.css("fontSize")) < 12) {
-    //         $this.css({ "font-size": "12px" });   
-    //     }
-    // });
 
     setInterval(function() {
         var currentImg = $('.active');
@@ -72,24 +56,22 @@ $(document).ready(function() {
         }
     });
 
+    function isInView(el) {
+        var rect = el.getBoundingClientRect(); // absolute position of video element
+        return !(rect.top > $(window).height() || rect.bottom < 0); // visible?
+    }
 
-    // function myFunction() {
-    //     document.getElementById("myDropdown").classList.toggle("show");
-    //   }
+    $(document).on("scroll", function() {
+        $("video").each(function() {
+            if (isInView($(this)[0])) { // visible?
+                if ($(this)[0].paused) $(this)[0].play(); // play if not playing
+            } else {
+                if (!$(this)[0].paused) $(this)[0].pause(); // pause if not paused
+            }
+        });
+    });
 
-    //   // Close the dropdown menu if the user clicks outside of it
-    //   window.onclick = function(event) {
-    //     if (!event.target.matches('.dropbtn')) {
-    //       var dropdowns = document.getElementsByClassName("dropdown-content");
-    //       var i;
-    //       for (i = 0; i < dropdowns.length; i++) {
-    //         var openDropdown = dropdowns[i];
-    //         if (openDropdown.classList.contains('show')) {
-    //           openDropdown.classList.remove('show');
-    //         }
-    //       }
-    //     }
-    //   }
+
 
 
 });
