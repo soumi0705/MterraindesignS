@@ -152,7 +152,6 @@ body::-webkit-scrollbar {
 .slider.outer {
     width: 100vw;
     position: absolute;
-    top: calc(9vh + 1vh);
 }
 
 .slider-inner {
