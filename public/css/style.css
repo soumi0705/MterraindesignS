@@ -141,12 +141,25 @@ body::-webkit-scrollbar {
     height: 100vh;
 }
 
+.font-caveat {
+    font-family: 'Caveat', cursive;
+}
+
 .container {
     width: 100vw;
     margin: 0px auto;
     overflow: hidden;
     display: flex;
     justify-content: center;
+}
+
+#overlay {
+    width: 100vw;
+    height: 700px;
+    background-color: rgb(33 25 4 / 56%);
+    position: absolute;
+    top: 0;
+    z-index: 30;
 }
 
 .slider.outer {
@@ -156,7 +169,7 @@ body::-webkit-scrollbar {
 
 .slider-inner {
     width: inherit;
-    height: 600px;
+    height: 700px;
     position: absolute;
     overflow: hidden;
     float: left;
@@ -164,9 +177,10 @@ body::-webkit-scrollbar {
 }
 
 .slider-inner img {
+    object-fit: cover;
     display: none;
     width: inherit;
-    height: 600px;
+    height: 700px;
     z-index: 0;
 }
 
