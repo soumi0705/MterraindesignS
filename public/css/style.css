@@ -7,9 +7,9 @@ body {
     background-image: url("../background/paperback.png");
 }
 
-#loader{
+#loader {
     height: 100vh;
-    width : 100vw;
+    width: 100vw;
     background-color: white;
     position: fixed;
     top: 50%;
@@ -17,36 +17,43 @@ body {
     transform: translate(-50%, -50%);
     z-index: 999;
 }
-#loader img{
+
+#loader img {
     position: absolute;
     height: 100px;
     width: 100px;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 }
 
 body::-webkit-scrollbar {
     display: none;
 }
+
 #headbar {
     display: flex;
     padding: 2px;
 }
+
 #headbar p {
     margin: auto 6px;
     font-size: large;
 }
+
 #bold {
     font-family: 'Stardos Stencil', cursive;
     text-shadow: 0.3px 0.3px 0.5px black;
 }
+
 #norm {
     text-shadow: 0.1px 0.1px 0.1px black;
 }
+
 #headbar img {
     max-height: 45px;
 }
+
 .head-right {
     display: block;
     text-align: right;
@@ -54,7 +61,7 @@ body::-webkit-scrollbar {
     right: 0;
 }
 
-.head-right p{
+.head-right p {
     font-size: 8px !important;
     font-family: 'Arial', sans-serif !important;
     font-stretch: ultra-expanded;
@@ -69,7 +76,6 @@ body::-webkit-scrollbar {
     width: 100%;
     z-index: 100;
 }
-
 
 #title {
     left: 0;
@@ -92,17 +98,18 @@ body::-webkit-scrollbar {
     border-bottom: solid 3px #ffffff;
 }
 
-
-.navbar-buttons{
-    height:inherit; 
-    right:7px; 
+.navbar-buttons {
+    height: inherit;
+    right: 7px;
     position: absolute;
 }
-.navbar-buttons a{
+
+.navbar-buttons a {
     text-decoration: none;
 }
+
 .navbuttons {
-    height: 69%; 
+    height: 69%;
     margin: 5px 0 5px 0;
 }
 
@@ -110,24 +117,9 @@ body::-webkit-scrollbar {
     opacity: 0;
     height: 0;
     position: absolute;
-    margin-left: 94px;
-    background-color: #ffffff;
-    width: 94px;
     overflow: hidden;
-    box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 20%);
     z-index: 1;
-    border-radius: 7px;
     transition: 0.5s ease-in-out;
-  }
-
-.dropdown-content a {
-    color: black;
-    padding: 7px 11px;
-    text-decoration: none;
-    display: block;
-    font-size: 12.55px;
-    font-family: "Calibri";
-    text-shadow: 1px 1px 0px #a09a8dd4;
 }
 
 .show {
@@ -145,8 +137,8 @@ body::-webkit-scrollbar {
     }
 }
 
-.panel{
-    height:100vh;
+.panel {
+    height: 100vh;
 }
 
 .container {
@@ -202,7 +194,6 @@ body::-webkit-scrollbar {
     right: 0;
 }
 
-
 .bg {
     width: 100vw;
     height: 100vh;
@@ -241,11 +232,10 @@ body::-webkit-scrollbar {
     top: 131.4vh;
 }
 
-#phil-content{
+#phil-content {
     position: absolute;
     top: 331.4vh;
 }
-
 
 .small {
     font-size: 17px;

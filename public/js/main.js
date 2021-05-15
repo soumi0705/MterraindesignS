@@ -1,20 +1,20 @@
 $(document).ready(function() {
-    var scrollifyOptions = {
-        section: ".panel",
-        //sectionName:false,
-        scrollSpeed: 1100,
-        setHeights: true,
-        overflowScroll: true,
-        touchScroll: true,
-    };
-    $.scrollify(scrollifyOptions);
+    // var scrollifyOptions = {
+    //     section: ".panel",
+    //     //sectionName:false,
+    //     scrollSpeed: 1100,
+    //     setHeights: true,
+    //     overflowScroll: true,
+    //     touchScroll: true,
+    // };
+    // $.scrollify(scrollifyOptions);
 
-    $("*").each( function () {
-        var $this = $(this);
-        if (parseInt($this.css("fontSize")) < 12) {
-            $this.css({ "font-size": "12px" });   
-        }
-    });
+    // $("*").each( function () {
+    //     var $this = $(this);
+    //     if (parseInt($this.css("fontSize")) < 12) {
+    //         $this.css({ "font-size": "12px" });   
+    //     }
+    // });
 
     setInterval(function() {
         var currentImg = $('.active');
@@ -54,13 +54,13 @@ $(document).ready(function() {
         }
     });
 
-    $('#projectbtn').on('click', function(){
+    $('#projectbtn').on('click', function() {
         var dropdown = $('.dropdown-content');
         dropdown.addClass('show');
     });
 
-    $('body').on('click', function(event){
-        if(!event.target.matches('#projectbtn')){
+    $('body').on('click', function(event) {
+        if (!event.target.matches('#projectbtn')) {
             var dropdowns = $(".dropdown-content");
             var i;
             for (i = 0; i < dropdowns.length; i++) {
@@ -72,11 +72,11 @@ $(document).ready(function() {
         }
     });
 
-    
+
     // function myFunction() {
     //     document.getElementById("myDropdown").classList.toggle("show");
     //   }
-      
+
     //   // Close the dropdown menu if the user clicks outside of it
     //   window.onclick = function(event) {
     //     if (!event.target.matches('.dropbtn')) {
