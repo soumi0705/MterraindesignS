@@ -157,6 +157,10 @@ body::-webkit-scrollbar {
     text-shadow: 3px 4px 2px black;
 }
 
+.tshadow-h {
+    text-shadow: 0px 0px 4px black;
+}
+
 #overlay {
     width: 100vw;
     height: 700px;
