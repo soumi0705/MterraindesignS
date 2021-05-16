@@ -303,3 +303,20 @@ body::-webkit-scrollbar {
 .font-montserrat {
     font-family: 'Montserrat', sans-serif;
 }
+
+.sliderup:hover {
+    position: relative;
+    transition: ease;
+    animation-name: slideUp;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(-0rem);
+    }
+    to {
+        transform: translateY(-4rem);
+    }
+}
