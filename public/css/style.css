@@ -216,7 +216,15 @@ body::-webkit-scrollbar {
 
 #blur-bg {
     height: inherit;
-    background-image: url('/background/bg2.jpg');
+    background-image: url('/background/bg4.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#blur-bg2 {
+    height: inherit;
+    background-image: url('/background/bg5.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -276,4 +284,18 @@ body::-webkit-scrollbar {
     height: auto;
     background-size: cover;
     overflow: hidden;
+}
+
+.dbrown {
+    background-color: #d4c8b2;
+}
+
+.bgreen {
+    background-color: #759a78;
+    fill: #759a78;
+}
+
+.vgreen {
+    background-color: #8af3a3;
+    fill: #8af3a3;
 }
