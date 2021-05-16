@@ -1,5 +1,6 @@
 $(document).ready(function() {
 
+
     setInterval(function() {
         var currentImg = $('.active');
         var nextImg = currentImg.next();
@@ -43,6 +44,8 @@ $(document).ready(function() {
         dropdown.addClass('show');
     });
 
+
+
     $('body').on('click', function(event) {
         if (!event.target.matches('#projectbtn')) {
             var dropdowns = $(".dropdown-content");
@@ -64,7 +67,10 @@ $(document).ready(function() {
     $(document).on("scroll", function() {
         $("video").each(function() {
             if (isInView($(this)[0])) { // visible?
-                if ($(this)[0].paused) $(this)[0].play(); // play if not playing
+                if ($(this)[0].paused) {
+                    console.log(play);
+                    // $(this)[0].play();
+                } // play if not playing
             } else {
                 if (!$(this)[0].paused) $(this)[0].pause(); // pause if not paused
             }
@@ -74,4 +80,19 @@ $(document).ready(function() {
 
 
 
+
 });
+
+function extendFunction(i) {
+    var dots = $("#dots" + i);
+    var moreText = $("#more" + i);
+    var btnText = $("#readmore" + i);
+
+    dots.toggle();
+    moreText.toggle();
+    if (btnText.html() == "Read more") {
+        btnText.html("Collapse");
+    } else {
+        btnText.html("Read more")
+    }
+}
