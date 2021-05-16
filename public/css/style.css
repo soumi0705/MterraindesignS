@@ -163,7 +163,7 @@ body::-webkit-scrollbar {
 #overlay {
     width: 100vw;
     height: 700px;
-    background-color: #2d2204b8;
+    background-color: #0a0800ba;
     position: absolute;
     top: 0;
     z-index: 30;
@@ -261,16 +261,6 @@ body::-webkit-scrollbar {
     padding: 27px;
     background-color: #999966;
     border-radius: 16px;
-}
-
-#abt-us-content {
-    position: absolute;
-    top: 131.4vh;
-}
-
-#phil-content {
-    position: absolute;
-    top: 331.4vh;
 }
 
 .Goth {
