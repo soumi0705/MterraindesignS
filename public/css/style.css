@@ -299,3 +299,7 @@ body::-webkit-scrollbar {
     background-color: #8af3a3;
     fill: #8af3a3;
 }
+
+.font-montserrat {
+    font-family: 'Montserrat', sans-serif;
+}

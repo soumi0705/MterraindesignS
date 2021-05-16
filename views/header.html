@@ -1,58 +1,86 @@
+<!DOCTYPE html>
+<html>
+
 <head>
-    <link rel="shortcut icon" type="image/png" href="/public/logo/favicon.png">
+    <link rel="shortcut icon" type="image/png" href="./logo/favicon.png">
     <title>
         M. Terrain DesignS
     </title>
-    <link rel="stylesheet" href="/public/css/style.css">
-    <link rel="stylesheet" href="/public/build/styles.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="build/styles.css">
+
+    <link rel="stylesheet" href="css/projstyle.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Roboto:wght@500&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Oxygen&family=Stardos+Stencil:wght@700&display=swap" rel="stylesheet">
-    <script src="/public/js/main.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.19/jquery.scrollify.js"></script>
+    <script src="js/main.js"></script>
 </head>
 
-<header class="block  bg-white bg-opacity-50 ">
-    <div class="flex pt-2 items-center justify-center ">
-        <div class="flex ml-3 ">
-            <img class="h-12 m-1 inline" src="/public/logo/MTerrainLogo.png">
-            <p class="inline m-1 text-3xl font-serif font-bold ">M. TERRAIN DESIGNS</p>
-            <p class="inline m-1 text-3xl">LLP</p>
-        </div>
+<body class="singpg">
+    <%- include('./partials/preloader.ejs') %>
+        <!--  include('./partials/header2.ejs')  -->
 
-
-        <div class="hidden md:flex items-center justify-end md:flex-1 ">
-            <div class="block mr-3  ">
-                <p class="text-sm">LANDSCAPE PLANNING</p>
-                <P class="text-sm">SPATIAL PLANNING</P>
-                <p class="text-sm">SUSTAINABLE DEVELOPMENT</p>
+        <section class="" id="proj-townships">
+            <div class="">
+                <div class="">TOWNSHIPS</div>
             </div>
-        </div>
-    </div>
+            <div class="">
+                <div class="grid grid-cols-1">
+                    <%var  i = 0%>
+                        <%var size = towns.length %>
+                            <!-- <div class = "townsp"></div> -->
+                            <!-- <div id="lftptr" class = "ptrs">
+                <img src="../project/lptr.png" alt="LPtr">
+            </div> -->
 
-    <!--------------------------------------------------------------------------------------------->
+                            <%for(; i< size; i++){ %>
+                                <div id="pjt<%=i%>" class="town">
+                                    <img class="townpic" src='<%=towns[i].photo%>' alt="Omaxe Hills">
+                                    <div class="overlay" id="ovl2">
+                                        <h4 class="ovlname">
+                                            <%=towns[i].name%>
+                                        </h4>
+                                        <h4 class="ovlarea">
+                                            <%=towns[i].loc%>
+                                        </h4>
+                                        <h4 class="ovlarea">
+                                            <%=towns[i].area%>
+                                        </h4>
 
-    <div class="block">
-        <div class=" flex justify-center items-start mt-3 pr-7 border-solid border-t-4 border-b-4 border-white">
-            <a href="/#about-us">
-                <button type="button" class="bg-white rounded-md inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:ring-green-500 py-2 px-3 my-2 mx-3 ring-2 ring-gray-300">ABOUT US</button>
-            </a>
-            <div class="relative">
-                <button id="projectbtn" class=" bg-white rounded-md inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:ring-green-500 py-2 px-3 my-2 mx-3 ring-2 ring-gray-300 ">PROJECTS</button>
-
-                <div id="pjtdrpdwn " class="dropdown-content origin-top-right block right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none ">
-                    <a class="text-gray-700 block px-4 py-2 text-sm" href="/townships ">TOWNSHIP</a>
-                    <a class="text-gray-700 block px-4 py-2 text-sm" href="/housing ">HOUSING</a>
-                    <a class="text-gray-700 block px-4 py-2 text-sm" href="commercial ">COMMERCIAL</a>
-                    <a class="text-gray-700 block px-4 py-2 text-sm" href="/villas ">RESIDENCES</a>
-                    <a class="text-gray-700 block px-4 py-2 text-sm " href="/misc ">MISC</a>
+                                    </div>
+                                </div>
+                                <%if(i>size-1){continue;}%>
+                                    <div class="townsp"></div>
+                                    <% } %>
+                                        <!-- 
+            <div id="pjt2" class = "town">
+                <img class = "townpic" src="../project/townships/park.png" alt="Omaxe Hills">
+                <div class = "overlay" id = "ovl2">
+                    
                 </div>
             </div>
+            
+            <div class = "townsp"></div>
+            <div id="pjt3" class = "town">
+                <img class = "townpic" src="../project/townships/omaxe-hills.png" alt="Omaxe Hills">
+                <div class = "overlay" id = "ovl2">
+                    
+                </div>
+            </div> -->
+                                        <!-- <div id="rgtptr" class="ptrs">
+                <img src="../project/rptr.png" alt="RPtr">
+            </div> -->
+                                        <!-- <div class = "townsp"></div> -->
+                </div>
+            </div>
+        </section>
+</body>
 
-
-
-            <button class="bg-white rounded-md inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:ring-green-500 py-2 px-3 my-2 mx-3 ring-2 ring-gray-300">CONTACT US</button>
-        </div>
-    </div>
-</header>
+</html>

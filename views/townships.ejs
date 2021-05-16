@@ -2,6 +2,7 @@
 <html>
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="shortcut icon" type="image/png" href="./logo/favicon.png">
     <title>
         M. Terrain DesignS
@@ -10,77 +11,107 @@
     <link rel="stylesheet" href="build/styles.css">
 
     <link rel="stylesheet" href="css/projstyle.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Roboto:wght@500&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oxygen&family=Stardos+Stencil:wght@700&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.19/jquery.scrollify.js"></script>
     <script src="js/main.js"></script>
 </head>
 
-<body class="singpg">
+<body class="">
     <%- include('./partials/preloader.ejs') %>
-        <%- include('./partials/header2.ejs') %>
+        <!--  include('./partials/header2.ejs')  -->
 
-            <section class="proj" id="townbg">
-                <div class="proj_head">
-                    <div class="proj_title">TOWNSHIPS</div>
-                </div>
-                <div class="township">
-                    <div class="slider-cover">
-                        <%var  i = 0%>
-                            <%var size = towns.length %>
-                                <!-- <div class = "townsp"></div> -->
-                                <!-- <div id="lftptr" class = "ptrs">
+        <section id="proj-townships">
+            <header class="py-2 shadow-md mb-3">
+                <div class="block">
+                    <div class="pt-3 flex justify-center ">
+                        <div class="text-xl font-medium font-montserrat">PROJECTS </div>
+                    </div>
+                    <div class="block">
+                        <div class="py-1 mb-3 flex justify-center ">
+                            <div class="text-5xl font-medium font-montserrat">TOWNSHIPS </div>
+                        </div>
+                    </div>
+                    <div class="block">
+                        <div class="flex justify-center ">
+                            <div class="h-1 w-56 border-b border-green-700 "></div>
+                        </div>
+                    </div>
+            </header>
+
+            <!--  ******************************************************************************************************************************************************************************************************************************************   -->
+
+
+
+            <div class="">
+                <div class="grid justify-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                    <%var  i = 0%>
+                        <%var size = towns.length %>
+                            <!-- <div class = "townsp"></div> -->
+                            <!-- <div id="lftptr" class = "ptrs">
                 <img src="../project/lptr.png" alt="LPtr">
             </div> -->
 
-                                <%for(; i< size; i++){ %>
-                                    <div id="pjt<%=i%>" class="town">
-                                        <img class="townpic" src='<%=towns[i].photo%>' alt="Omaxe Hills">
-                                        <div class="overlay" id="ovl2">
-                                            <h4 class="ovlname">
-                                                <%=towns[i].name%>
-                                            </h4>
-                                            <h4 class="ovlarea">
-                                                <%=towns[i].loc%>
-                                            </h4>
-                                            <h4 class="ovlarea">
-                                                <%=towns[i].area%>
-                                            </h4>
+                            <%for(; i< 3; i++){ %>
+                                <div id="pjt<%=i%>" class="py-2 px-1 ">
+                                    <img class="" src='<%=towns[i].photo%>' alt="Omaxe Hills">
+                                    <div class="" id="">
+                                        <h4 class="">
+                                            <%=towns[i].name%>
+                                        </h4>
+                                        <h4 class="">
+                                            <%=towns[i].loc%>
+                                        </h4>
+                                        <h4 class="">
+                                            <%=towns[i].area%>
+                                        </h4>
 
-                                        </div>
                                     </div>
-                                    <%if(i>size-1){continue;}%>
-                                        <div class="townsp"></div>
-                                        <% } %>
-                                            <!-- 
-            <div id="pjt2" class = "town">
-                <img class = "townpic" src="../project/townships/park.png" alt="Omaxe Hills">
-                <div class = "overlay" id = "ovl2">
-                    
+                                </div>
+                                <% } %>
                 </div>
             </div>
-            
-            <div class = "townsp"></div>
-            <div id="pjt3" class = "town">
-                <img class = "townpic" src="../project/townships/omaxe-hills.png" alt="Omaxe Hills">
-                <div class = "overlay" id = "ovl2">
-                    
-                </div>
-            </div> -->
-                                            <!-- <div id="rgtptr" class="ptrs">
-                <img src="../project/rptr.png" alt="RPtr">
-            </div> -->
-                                            <!-- <div class = "townsp"></div> -->
-                    </div>
-                </div>
-            </section>
+        </section>
+        <div class="block relative mt-3 min-w-full">
+            <div class="container  dbrown px-5 py-8 min-w-full mt-4 flex items-center sm:flex-row flex-col">
+                <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+
+                    <span class="ml-3 text-xl text-gray-700 font-mono">M.TERRAIN DESIGNS</span>
+                </a>
+                <p class="text-sm text-gray-700 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2021 by Soumitro Datta
+                    <a href="https://twitter.com/knyttneve" class="text-gray-600 ml-1" rel="noopener noreferrer" target="_blank"></a>
+                </p>
+                <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+              <a class="text-gray-700">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                  <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                </svg>
+              </a>
+              <a class="ml-3 text-gray-700">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                  <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                </svg>
+              </a>
+              <a class="ml-3 text-gray-700">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                </svg>
+              </a>
+              <a class="ml-3 text-gray-700">
+                <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                  <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                  <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                </svg>
+              </a>
+            </span>
+            </div>
+        </div>
+
 </body>
 
 </html>
