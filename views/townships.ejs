@@ -48,7 +48,7 @@
 
 
             <div class="">
-                <div class="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                <div class="grid w-full md:justify-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                     <%var  i = 0%>
                         <%var size = towns.length %>
                             <!-- <div class = "townsp"></div> -->
@@ -56,12 +56,12 @@
                 <img src="../project/lptr.png" alt="LPtr">
             </div> -->
 
-                            <%for(; i< 3; i++){ %>
+                            <%for(; i< size; i++){ %>
                                 <div class="flex justify-centre">
-                                    <div id="pjt0" class="relative text-center h-72 w-72 sm:h-80 sm:w-80 xl:h-96 xl:w-96 bg-gray-200 overflow-y-hidden mx-auto my-1">
+                                    <div id="pjt0" class="relative justify-center text-center h-72 w-72 sm:h-80 sm:w-80 xl:h-96 xl:w-96  overflow-hidden mx-auto my-2 shadow-lg rounded-lg">
                                         <img class="h-72 w-72 sm:h-80 sm:w-80 xl:h-96 xl:w-96 z-10 absolute sliderup" style="object-fit:cover;" src="<%=towns[i].photo%>" alt="Omaxe Hills">
-                                        <div class="absolute bottom-1 left-2 text-center w-72 m-auto" id="">
-                                            <h4 class="">
+                                        <div class="absolute bottom-1 left-2 text-center w-72 sm:w-80 xl:w-96 m-auto" id="">
+                                            <h4 class="text-base font-montserrat">
                                                 <%=towns[i].name%>
                                             </h4>
                                             <h4 class="">
@@ -76,7 +76,7 @@
             </div>
         </section>
         <footer>
-            <div class="block relative lg:fixed lg:bottom-0  mt-3 min-w-full">
+            <div class="block relative md:fixed md:bottom-0  mt-3 min-w-full">
                 <div class="container  dbrown px-5 py-8 min-w-full mt-4 flex items-center sm:flex-row flex-col">
                     <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
 
