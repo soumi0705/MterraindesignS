@@ -26,7 +26,7 @@
         <!--  include('./partials/header2.ejs')  -->
 
         <section id="proj-townships">
-            <header class="py-2 shadow-md mb-3">
+            <header class="py-2 sm:shadow-md sm:mb-3">
                 <div class="block">
                     <div class="pt-3 flex justify-center ">
                         <div class="text-xl font-medium font-montserrat">PROJECTS </div>
@@ -36,7 +36,7 @@
                             <div class="text-5xl font-medium font-montserrat">TOWNSHIPS </div>
                         </div>
                     </div>
-                    <div class="block">
+                    <div class="hidden sm:block">
                         <div class="flex justify-center ">
                             <div class="h-1 w-56 border-b border-green-700 "></div>
                         </div>
@@ -45,22 +45,31 @@
 
             <!--  ******************************************************************************************************************************************************************************************************************************************   -->
 
-
-
+            <div class="flex">
+                <div class="w-full md:w-28 lg:w-48  md:mx-8 lg:mx-7  my-1">
+                    <a href="/">
+                        <div class="h-full pl-3 lg:py-1 dark:bg-gray-800 bg-white hover:shadow-xl rounded border-b-2 border-green-700 ring-1 ring-gray-200 shadow-md">
+                            <h3 class="text-base text-gray-500 mb-3 font-montserrat lg:mb-0 font-semibold inline-flex">
+                                <svg class="mr-2 h-6 w-6 font-montserrat text-gray-500" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M1.02698 11.9929L5.26242 16.2426L6.67902 14.8308L4.85766 13.0033L22.9731 13.0012L22.9728 11.0012L4.85309 11.0033L6.6886 9.17398L5.27677 7.75739L1.02698 11.9929Z"
+                                    fill="currentColor" /></svg> Back
+                            </h3>
+                            <p class="hidden lg:block lg:text-xs lg:ml-2 text-gray-500 font-montserrat">To Homepage</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!--****************************************************************************************************************************************************************************************************************************-->
             <div class="">
                 <div class="grid w-full md:justify-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                     <%var  i = 0%>
                         <%var size = towns.length %>
-                            <!-- <div class = "townsp"></div> -->
-                            <!-- <div id="lftptr" class = "ptrs">
-                <img src="../project/lptr.png" alt="LPtr">
-            </div> -->
-
                             <%for(; i< size; i++){ %>
                                 <div class="flex justify-centre">
-                                    <div id="pjt0" class="relative justify-center text-center h-72 w-72 sm:h-80 sm:w-80 xl:h-96 xl:w-96  overflow-hidden mx-auto my-2 shadow-lg rounded-lg">
-                                        <img class="h-72 w-72 sm:h-80 sm:w-80 xl:h-96 xl:w-96 z-10 absolute sliderup" style="object-fit:cover;" src="<%=towns[i].photo%>" alt="Omaxe Hills">
-                                        <div class="absolute bottom-1 left-2 text-center w-72 sm:w-80 xl:w-96 m-auto" id="">
+                                    <div id="pjt0" class="relative justify-center text-center h-72 w-72 sm:h-80 sm:w-80 xl:h-108 xl:w-108  overflow-hidden mx-auto my-2 shadow-lg ring-1 ring-gray-200 rounded-lg">
+                                        <img class="h-72 w-72 sm:h-80 sm:w-80 xl:h-108 xl:w-108 z-10 absolute sliderup" style="object-fit:cover;" src="<%=towns[i].photo%>" alt="Omaxe Hills">
+                                        <div class="absolute bottom-1 left-2 text-center w-72 sm:w-80 xl:w-108 m-auto" id="">
                                             <h4 class="text-base font-montserrat">
                                                 <%=towns[i].name%>
                                             </h4>
@@ -75,8 +84,10 @@
                 </div>
             </div>
         </section>
+
+
         <footer>
-            <div class="block relative md:fixed md:bottom-0  mt-3 min-w-full">
+            <div class="block relative mt-3 min-w-full">
                 <div class="container  dbrown px-5 py-8 min-w-full mt-4 flex items-center sm:flex-row flex-col">
                     <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
 

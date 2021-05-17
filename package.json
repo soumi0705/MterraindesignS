@@ -4,7 +4,7 @@
     "description": "Website for Company ",
     "main": "app.js",
     "scripts": {
-        "build": "npx tailwindcss-cli build public/css/tailwindd.css -o build/styles.css",
+        "build": "npx tailwindcss-cli build public/css/tailwindd.css -o public/build/styles.css",
         "test": "echo \"Error: no test specified\" && exit 1",
         "start": "node app.js"
     },
