@@ -115,3 +115,7 @@ h4.ovlarea {
 .w-108 {
     width: 25rem;
 }
+
+.treecolor {
+    fill: green;
+}
